@@ -729,7 +729,7 @@
 				  slides[slideIndex-1].style.display = "block";
 				  dots[slideIndex-1].className += " active";
 				  captionText.innerHTML = dots[slideIndex-1].alt;
-				} 
+				  } 
 					
 					
 				var mybutton = document.getElementById("myBtntop");
@@ -749,24 +749,10 @@
 				document.documentElement.scrollTop = 0;
 				}
 					
-				</script>
+		</script>
 
+	</div>
 
-
-				
-			</div>
-
-			
-
-
-
-
-
-
-
-
-
-			
 
 
 			<div class="buttonmove2">
@@ -774,29 +760,6 @@
 					<button onclick="topFunction()" id="myBtntop" title="Go to top">Top</button>
 			</div>
 
-
-
-				<script>
-				var mybutton = document.getElementById("myBtntop");
-				window.onscroll = function() {scrollFunction()};
-
-
-
-				function scrollFunction() {
-				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-				mybutton.style.display = "block";
-				} else {
-				mybutton.style.display = "none";
-				}
-				}
-
-
-
-				function topFunction() {
-				document.body.scrollTop = 0;
-				document.documentElement.scrollTop = 0;
-				}
-				</script>
 
 		</body>
 
