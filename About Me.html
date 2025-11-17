@@ -1,0 +1,521 @@
+<!doctype html>
+
+	<html>
+
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>K‘s Portfolio</title>
+		</head>
+
+
+		<style>
+
+			html{
+				width: 100%;
+				}
+
+
+			body{
+				background-color:#EEEEEE;
+				}
+
+			.menu{
+				position: fixed;
+				right: 0;
+				z-index: 100;
+				width: 200px;
+				margin-top: 10px;
+				margin-right: 50px;
+				}
+
+			.menu a{
+				font-size: 2em;
+				font-family: "Helvetica";
+				color: #000000;
+				text-decoration: none;
+				}
+
+			ul{
+				text-decoration: none;
+				list-style-type: none;
+				text-align: right;
+				}
+
+			li a:hover{
+				color: #000;
+				font-style: italic;
+				}
+
+			.active{
+				font-weight: 800;
+				}
+
+
+			h1{
+				margin-left: 40px;
+				font-family: 'Helvetica';
+				margin-top: 0;
+				font-size: 10vw;
+				text-align: right;
+				line-height: 8vw;
+				z-index:40;
+				}
+
+			.rotatetext{
+				position: absolute;
+				margin-top:300px;
+				}
+			
+
+			.introtext{
+				position: absolute;
+				margin-top: 1000px;
+				display: block;
+				max-width: 600px;
+				margin-right: 0;
+				margin-left: 80px;
+				margin-right: 50px;
+				}
+
+			.introtext h4{
+				font-family: "Helvetica";
+				font-size: 2em;
+				color: #000;
+				max-width: 700px;
+				font-weight: normal;
+				margin-bottom:300px;
+				}
+			
+			.title a{
+				text-decoration: none;
+				color: black;
+			}
+			
+			.title a:hover {
+				font-style: italic;
+				}
+		
+
+			.buttonmove1{
+				position: fixed;
+				height: 33px;
+				width: 33px;
+				background: black;
+				right: 0;
+				border-radius: 50%;
+				margin-top: 240px;
+				margin-right: 50px;
+				animation: myfirst 2.0s infinite;
+				animation-direction: alternate;
+				}
+
+			@keyframes myfirst {
+			0%{background:black; bottom:0px;top:80px;}
+			25%{background:black; bottom:30px; top:0px;}
+			}
+
+			.movep{
+				font-family: "Helvetica";
+				margin-right: 0;
+				}
+
+			#myBtntop {
+				font-size: 1.5em;
+				border: none;
+				outline: none;
+				margin-bottom:100px;
+				background-color: black;
+				color: #eeeeee;
+				cursor: pointer;
+				padding: 11px 7px;
+				}
+
+
+			#myBtntop:hover {
+				background-color: black;
+				}
+
+
+			.buttonmove2{
+				position: relative;
+				float: right;
+				margin-right:-800px;
+				margin-top: 3200px;
+				margin-bottom: 150px;
+				width: 20px;
+				height: 20px;
+				background: transparent;
+				position: relative;
+				animation: mysecond 2.0s infinite;
+				animation-direction: alternate;
+				}
+
+			
+			.buttonmove3{
+				position: relative;
+				float: right;
+				margin-right:800px;
+				margin-top: 200px;
+				width: 80px;
+				background: transparent;
+				animation: mythird 2.0s infinite;
+				animation-direction: alternate-reverse;
+				animation-iteration-count: 1;
+				z-index:-3;
+				}
+			
+				
+			.buttonmove3 img{
+				margin-left: 140px;
+				width: 400px;
+				}
+				
+			.buttonmove3 h4{
+				margin-top:-60px;
+				font-size: 4em;
+				color: #eeeeee;
+				margin-left: 140px;
+				}
+			
+
+			@keyframes mythird {
+			from {left: 0px;}
+			to {left: 200px; background-color: transparent;}
+			}
+				
+			
+			h5{
+				font-family:"Helvetica";
+				font-size: 4em;
+				font-weight: 800;
+				margin-bottom:250px;
+				
+				}
+			
+			.say a{
+				color: black;
+				text-decoration: none;
+				font-style:italic;
+				}
+				
+				.say a:hover{
+					font-style:normal;
+					}
+			
+			
+			
+			@media screen and (max-width: 768px){
+
+				
+				h1{
+				margin-left: 40px;
+				font-family: 'Helvetica';
+				margin-top: 0;
+				font-size: 10vw;
+				text-align: right;
+				line-height: 8vw;
+				z-index:40;
+				}
+
+				
+				.rotatetext{
+					transform: rotate(270deg);
+					margin-top: 300px;
+					margin-left: 0px;
+					}
+
+				.introtext h4{
+					margin-bottom:300px;
+					}
+				
+				#myBtntop{
+					margin-left: 10px;
+					}
+
+				.buttonmove2{
+					margin-right:80px;
+					margin-bottom: 100px;
+					margin-top: 2200px;
+					width: 20px;
+					height: 20px;
+					background: transparent;
+					position: relative;
+					animation: mysecond 2.0s infinite;
+					animation-direction: alternate;
+					}
+			
+				
+				.buttonmove3{
+					position: relative;
+					float: right;
+					margin-left:80%;
+					margin-right:520px;
+					margin-top: 300px;
+					width: 80px;
+					height: 80px;
+					background: transparent;
+					animation: mythird 2.0s infinite;
+					animation-direction: alternate-reverse;
+					animation-iteration-count: 1;
+					}
+			
+				
+				.buttonmove3 img{
+					margin-right: -33%;
+					width: 250px;
+					}
+				
+				
+			@keyframes mythird {
+			from {right: 0px;}
+			to {right: 200px; background-color: transparent;}
+			}
+			
+			h5{
+				font-family:"Helvetica";
+				font-size: 6vw;
+				font-weight: normal;
+				margin-bottom:250px;
+				}
+				
+				.say a{
+				color: black;
+				text-decoration: none;
+				font-style:italic;
+				}
+				
+				.say a:hover{
+					font-style:normal;
+					}
+				
+			}
+			
+			
+			
+			@media screen and (max-width: 481px){
+
+				
+				
+				
+				h1{
+					margin-left: 40px;
+					font-family: 'Helvetica';
+					margin-top: 0;
+					font-size: 10vw;
+					text-align: right;
+					line-height: 8vw;
+					z-index:40;
+					}
+
+			.rotatetext{
+					transform: rotate(270deg);
+					margin-top: 300px;
+					margin-left: 0px;
+				}
+
+			
+
+				.menu a{
+					font-size: 1.5em;
+					font-family: "Helvetica";
+					color: #000000;
+					text-decoration: none;
+				}
+
+
+				.introtext{
+					margin-top: 800px;
+					display: block;
+					max-width: 401px;
+					margin-right: 20px;
+					margin-left: 25px;
+					}
+
+				.introtext h4{
+					font-family: "Helvetica";
+					font-size:1.5em;
+					color: #000;
+					max-width: 401px;
+					font-weight: normal;
+					margin-bottom: 300px;
+					}
+				
+					
+				h5{
+				margin-bottom:250px;
+				font-size:1.5em;
+				font-weight:800;
+				margin-top: -70px;
+				
+				}
+			
+				
+				.buttonmove2{
+					margin-left:80%;
+					margin-top: 2400px;
+					margin-bottom:50px;
+					width: 20px;
+					height: 20px;
+					background: transparent;
+					position: relative;
+					animation: mysecond 2.0s infinite;
+					animation-direction: alternate;
+					}
+				
+				
+				.buttonmove3{
+					position: relative;
+					float: right;
+					margin-left:-50%;
+					margin-right:300px;
+					margin-top: 360px;
+					width: 80px;
+					height: 80px;
+					background: transparent;
+					animation: mythird 2.0s infinite;
+					animation-direction: alternate-reverse;
+					animation-iteration-count: 1;
+					}
+			
+				
+				.buttonmove3 img{
+					margin-right: -33%;
+					width: 200px;
+					}
+				
+					.buttonmove3 h4{
+				margin-top:-63px;
+				font-size: 4em;
+				color: #eeeeee;
+				margin-left: 140px;
+				}
+				
+				
+				
+			@keyframes mythird {
+			from {right: 0px;}
+			to {right: 100px; background-color: transparent;}
+			}
+			
+			.say a{
+				color: black;
+				text-decoration: none;
+				font-style:italic;
+				}
+				
+				.say a:hover{
+					font-style:normal;
+					}	
+
+			}
+
+
+
+		</style>
+
+
+		<body>
+			
+			<div class="menu">
+					<ul>
+						<li>
+							<a class="active" href="3 Kportfolio about me.html">About Me</a>
+						</li>
+						<li>
+							<a href="Contact.html">Contact</a>
+						</li>
+						<li>
+							<a href="1 Kportfolio Work Kopie.html">Work</a>
+						</li>
+						<li>
+							<a href="index.html">K</a>
+						</li>
+						<li>
+							<a href="theportfolio Imprint.html">I+DP</a>
+						</li>
+					</ul>
+			</div>
+
+
+			<div class="rotatetext">
+				<h1>
+				 HELLO<br> and <br> SERVUS
+				</h1>
+			</div>
+
+							<div class="buttonmove3">
+								<img src="" alt="">
+								<h4>:-)</h4>
+								
+							</div>
+		
+
+			<div class="buttonmove1">
+				<p class="movep"> </p>
+			</div>
+
+
+			<div class="introtext">
+			
+			<h4 class="title">
+				Katharina Lutz is a graphic designer and printmaking enthusiast from Bavaria, Germany, 
+        with a deep passion for typography and analogue processes. Her practice explores the decelerating potential 
+        and continued relevance of analogue printmaking in today’s fast-paced, post-digital world. 
+      <br>
+        She works with language and typography in abstract, non-conventional forms to reflect on themes such as the relationship between body and mind, 
+        thought processes, complex emotions, and human nature. Her Somatic Compositions investigate the role of intuition in letterpress and lithography
+        as a means of revealing embodied self-understanding. Through intuitive engagement with abstract typographic compositions and asemic writing, 
+        she explores how the body can become a tool for thinking – mapping emotion and thought through printed matter. Her research asks how intuition 
+        can be embedded within the often inaccessible realms of traditional printmaking, reimagining these methods as pathways to access the subconscious 
+        and enable self-reflection.
+     <br>
+        In the workshop, Katharina embraces the labour-intensive nature of analogue printmaking, 
+        engaging in a dialogic process between body, mind, machine, and material. 
+        She sees this as a meditative and reflective act that opens up alternative ways of knowing the self.
+      <br>
+        To expand access to these practices beyond specialist communities, she collaborates with international printmaking collectives
+        such as Verein für die Schwarze Kunst e.V. (Germany) and Fjeld-Ljoms Venner (Norway), working to sustain and evolve the role of analogue print
+        in contemporary design discourse.
+    </h4>
+				
+				
+				<h5 class="say">
+				Let’s get <br> in touch? <br> Feel free <br> to <a href="2 Kportfolio Contact.html"> Contact me here </a>  
+				</h5>	
+			
+			</div>
+
+
+			<div class="buttonmove2">
+					<p class="movep"></p>
+					<button onclick="topFunction()" id="myBtntop" title="Go to top">Top</button>
+			</div>
+
+
+
+				<script>
+				var mybutton = document.getElementById("myBtntop");
+				window.onscroll = function() {scrollFunction()};
+
+
+
+				function scrollFunction() {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+				} else {
+				mybutton.style.display = "none";
+				}
+				}
+
+
+
+				function topFunction() {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+				}
+				</script>
+
+		</body>
+
+</html>
