@@ -1,0 +1,340 @@
+<!doctype html>
+
+	<html>
+
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>K‘s Portfolio</title>
+		</head>
+
+
+		<style>
+
+			html{
+				width: 100%;
+			}
+
+
+			body{
+				background-color:#EEEEEE;
+			}
+
+			.menu{
+				position: fixed;
+				right: 0;
+				z-index: 100;
+				width: 200px;
+				margin-top: 10px;
+				margin-right: 50px;
+
+			}
+
+			.menu a{
+				font-size: 2em;
+				font-family: "Helvetica";
+				color: #000000;
+				text-decoration: none;
+			}
+
+			ul{
+				text-decoration: none;
+				list-style-type: none;
+				text-align: right;
+				}
+
+			li a:hover{
+				color: #000;
+				font-style: italic;
+				}
+
+			.active{
+				font-weight: 800;
+				}
+
+
+			.introtext{
+				position: absolute;
+				margin-top: 500px;
+				display: block;
+				max-width: 600px;
+				margin-right: 0;
+				margin-left: 80px;
+				}
+
+			.introtext h4{
+				font-family:'Helvetica';
+				font-size:2em;
+				color: #000;
+				max-width: 600px;
+				margin-bottom: 50px;
+				font-weight: normal;
+			
+			}
+			
+			.title a{
+				font-family:'Helvetica';
+				text-decoration: none;
+				color:black;
+				font-style: normal;
+				
+			}
+			
+			.title a:hover {
+				font-style: italic;
+				}
+			
+			.buttonmove4{
+				position: absolute;
+				height: 33px;
+				width: 33px;
+				border-radius: 50%;
+				background: #eeeeee;
+				margin-left: 35%;
+				margin-top: 350px;
+				animation: myfourth 2.0s infinite;
+				animation-direction: alternate-reverse;
+				}
+
+			@keyframes myfourth{
+			from {left: 50px;background: #eeeeee;}
+			to {left: 15%; background-color: black;}
+			}
+			
+			.movep1{
+					font-size:1.5em;
+					line-height: 0.8em;
+					font-family:'Baskerville', 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif';
+					margin-left: -30px;
+					font-weight:800;
+					}
+
+			
+			.buttonmove5{
+				position: absolute;
+				height: 33px;
+				width: 33px;
+				border-radius: 50%;
+				background: #eeeeee;
+				margin-top: 350px;
+				margin-right: 35%;
+				animation: myfifth 2.0s infinite;
+				animation-direction: alternate-reverse;
+				}
+
+
+			@keyframes myfifth {
+			from {right: 50px; background: #eeeeee;}
+			to {right: 15%; background: black;}
+			}
+			
+		
+				
+				.movep2{
+					font-size:1.5em;
+					line-height: 0.8em;
+					font-family: 'Baskerville', 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif';
+					margin-left: 30px;
+					font-weight:800;
+					}
+
+
+			@media screen and (max-width: 768px){
+
+				.rotatetext{
+					transform: rotate(270deg);
+					margin-top: 300px;
+					margin-left: -40px;
+				}
+
+				h1{
+					margin-top: 0;
+					font-size: 30vw;
+					line-height: 25vw;
+				}
+
+				.introtext{
+					margin-top: 450px;
+				}
+
+				.introtext h4{
+					margin-bottom: 50px;
+					margin-left:-40px;
+				}
+
+				.buttonmove4{
+					position: absolute;
+					height: 33px;
+					width: 33px;
+					border-radius: 50%;
+					background: #eeeeee;
+					margin-left: 45px;
+					margin-top: 270px;
+					margin-right: 50px;
+					animation: myfourth 2.0s infinite;
+					animation-direction: alternate-reverse;
+					}
+
+			@keyframes myfourth{
+			from {left: 50px;background: #eeeeee;}
+			to {left: 40.7%; background-color: black;}
+			}
+			
+
+			
+			.buttonmove5{
+				position: absolute;
+				height: 33px;
+				width: 33px;
+				border-radius: 50%;
+				background: #eeeeee;
+				margin-left: 45px;
+				margin-top: 270px;
+				margin-right: 50px;
+				animation: myfifth 2.0s infinite;
+				animation-direction: alternate-reverse;
+				}
+
+
+			@keyframes myfifth {
+			from {right: 50px; background: #eeeeee;}
+			to {right: 40.7%; background: black;}
+			}
+			}
+			
+			
+			@media screen and (max-width: 481px){
+
+				
+				.menu a{
+					font-size: 1.5em;
+					font-family: "Helvetica";
+					color: #000000;
+					text-decoration: none;
+				}
+
+
+				.introtext{
+					margin-top: 350px;
+					display: block;
+					max-width: 401px;
+					margin-right: 10px;
+					margin-left: 80px;
+				}
+
+				.introtext h4{
+					font-family: "Helvetica";
+					font-size:1.5em;
+					color: #000;
+					max-width: 401px;
+					font-weight: normal;
+					margin-bottom: 50px;
+				}
+
+			
+				
+				.buttonmove4{
+					position: absolute;
+					height: 33px;
+					width: 33px;
+					border-radius: 50%;
+					background: #eeeeee;
+					margin-left: 40px;
+					margin-top: 250px;
+					margin-right: 50px;
+					animation: myfourth 2.0s infinite;
+					animation-direction: alternate-reverse;
+					}
+
+					@keyframes myfourth{
+			from {left: 50px;background: #eeeeee;}
+			to {left: 35.45%; background-color: black;}
+			}
+			
+
+			
+			.buttonmove5{
+				position: absolute;
+				height: 33px;
+				width: 33px;
+				border-radius: 50%;
+				background: #eeeeee;
+				margin-left: 40px;
+				margin-top: 250px;
+				margin-right: 50px;
+				animation: myfifth 2.0s infinite;
+				animation-direction: alternate-reverse;
+				}
+
+
+			@keyframes myfifth {
+			from {right: 50px; background: #eeeeee;}
+			to {right: 35.45%; background:black;}
+			}
+			
+
+			}
+
+
+
+		</style>
+
+
+		<body>
+			
+			<div class="menu">
+					<ul>
+						<li>
+							<a href="About me.html">About Me</a>
+						</li>
+						<li>
+							<a class="active" href="Contact.html">Contact</a>
+						</li>
+						<li>
+							<a href="1 Kportfolio Work.html">Work</a>
+						</li>
+						<li>
+							<a href="index.html">K</a>
+						</li>
+						<li>
+							<a href="theportfolio Imprint.html">I+DP</a>
+						</li>
+					</ul>
+			</div>
+
+
+			<div class="buttonmove4">
+				<p class="movep1"> LET' <br> CON</p>
+			</div>
+			
+			<div class="buttonmove5">
+				<p class="movep2"> S<br> NECT</p>
+			</div>
+			
+			
+			
+			<div class="introtext">
+			
+				<h4 class="title">
+					Mail 
+					<br>
+						<a href="mailto:kalutz@stud.mediadesign.de">kalutz@stud. <br> mediadesign.de </a>
+					<br>
+					<br>
+					Instagram
+					<br>
+						<a href="https://www.instagram.com/designbykalu/">designbykalu</a>
+					<br>
+					<br>
+					Behance
+					<br>
+						<a href="https://www.behance.net/katharinalutz?tracking_source=search_users_recommended%7CKatharina%20lutz">Katharina Lutz</a>
+				</h4>
+					
+			</div>
+
+
+			
+		</body>
+
+</html>
